@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>OtakuVerse - Contact</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-RkFcABVqO..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
   <header>
@@ -33,6 +34,27 @@
         <button type="submit" class="btn">Send Message</button>
       </form>
     </section>
+
+    <section class="socials-section">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="https://instagram.com/otakuverse" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://x.com/otakuverse" target="_blank" title="Twitter/X"><i class="fab fa-twitter"></i></a>
+        <a href="https://t.me/anime_community_links" target="_blank" title="Join our Telegram"><i class="fab fa-telegram"></i></a>
+        <a href="https://discord.gg/anime" target="_blank" title="Join our Discord"><i class="fab fa-discord"></i></a>
+      </div>
+    </section>
+
+    <section class="community-links">
+      <h3>Join Our Anime Communities</h3>
+      <ul>
+        <li><a href="https://t.me/AnimeWorldHD" target="_blank">📺 Anime World HD (Telegram Channel)</a></li>
+        <li><a href="https://t.me/AnimeVault" target="_blank">🔥 Anime Vault (Telegram)</a></li>
+        <li><a href="https://discord.gg/otaku" target="_blank">💬 Otaku Central (Discord)</a></li>
+        <li><a href="https://myanimelist.net/" target="_blank">📚 MyAnimeList – Discover & Track Anime</a></li>
+        <li><a href="https://www.reddit.com/r/anime/" target="_blank">🎌 r/Anime (Reddit)</a></li>
+      </ul>
+    </section>
   </main>
 
   <footer>
@@ -40,7 +62,6 @@
   </footer>
 
   <script>
-    // Simple form validation
     document.getElementById('contactForm').addEventListener('submit', function (e) {
       const email = document.getElementById('email').value;
       if (!email.includes('@')) {
