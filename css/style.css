@@ -66,7 +66,7 @@
   .hero {
     padding: 2rem;
     text-align: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(240, 235, 235, 0.5)), 
                 url('../images/hero-bg.jpg') center/cover no-repeat;
     color: #fff;
   }
@@ -84,7 +84,7 @@
     width: 90%;
     max-width: 800px;
     border-radius: 10px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 8px 20px rgba(227, 196, 235, 0.719);
   }
   
   /* ====== Features Section ====== */
@@ -605,5 +605,56 @@
       width: 100%;
       align-self: center;
     }
+  }
+  .anime-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .anime-card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .anime-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .anime-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  .anime-card h3 {
+    margin: 10px 0 5px;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .anime-card p {
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .anime-card .btn {
+    display: inline-block;
+    margin-bottom: 15px;
+    padding: 8px 15px;
+    background-color: #2c81d1;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .anime-card .btn:hover {
+    background-color: #1b626e;
   }
   
